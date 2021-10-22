@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
+
+* {
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: #fafafa;
+    height: 150vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+    object-fit: contain;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__signup {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.app__headerimage {
+    object-fit: contain;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__posts {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 100px;
 }
+
+.imageupload__logout {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+}
+
